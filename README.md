@@ -10,3 +10,4 @@ Check if game is drawn.
 Check if game has been won.
 Simple winning statistics at the end of the playing session.
 
+uses termcolor library for colorizing strings.
