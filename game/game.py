@@ -93,7 +93,7 @@ Enjoy the game!
         colors_returned = self.__symbols.get_player_color(symbol_color_submitted)
         if not colors_returned:
             print(f"{self.__player_one.name}, this is not a valid color.")
-            self.__assign_players_colors()
+            return self.__assign_players_colors()
         else:
             player_one_color, player_two_color = colors_returned
             self.__player_one.color = player_one_color
@@ -195,5 +195,5 @@ Enjoy the game!
                 raise ValueError
             return True if response == "y" else False
         except ValueError:
-            self.__continue_playing()
+            return self.__continue_playing()
 
